@@ -1,0 +1,97 @@
+.page-body {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    outline: 2px solid green;
+    min-height: 800px;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.mainHeading {
+    outline: 1px solid green;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 40pt;
+    color: orangered;
+    background-color: rgb(147, 243, 147);
+}
+
+.page-main {
+    background-color: rgb(203, 234, 248);
+}
+
+.text {
+    outline: 1px solid green;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 20pt;
+    color: rgb(79, 109, 207);
+    background-color: rgb(170, 245, 235);
+
+}
+
+.btn {
+    display: block;
+    width: 350px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: rgb(35, 193, 233);
+    color: rgb(239, 247, 130);
+    font-size: 40pt;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+.btn:hover {
+    box-shadow: 1px 1px 2px rgb(48, 43, 43), -1px -1px 2px rgb(48, 43, 43);
+    background-color: rgb(33, 184, 221);
+    color: rgb(235, 248, 48);
+}
+
+.btn:active {
+    box-shadow: 1px 1px 2px rgb(48, 43, 43) inset, -1px -1px 2px rgb(48, 43, 43) inset;
+    color: rgb(201, 202, 180);
+}
+
+.container {
+display: flex;
+}
+
+.list {
+    list-style: none;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    outline: 1px solid pink;
+    width: 250px;
+}
+
+.item {
+    display: block;
+    outline: 1px solid rgb(16, 231, 99);
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(245, 221, 117);
+    color: rgb(48, 136, 219);
+}
+
+.basement {
+    outline: 1px solid green;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 20pt;
+    color: rgb(90, 100, 105);
+    background-color: rgb(236, 236, 188);
+}
