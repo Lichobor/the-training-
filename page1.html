@@ -10,36 +10,29 @@
 
 <body class="page-body">
     <header>
-        <h1 class="mainHeading">Привет, Мир!!!</h1>
+        <h1 class="main-heading">Привет, Мир!!!</h1>
     </header>
     <main class="page-main">
         <div class="text">
             Этот проект я сделал сам!
         </div>
-        <button class="btn" id="btn-1">Жми!!!</button>
-        <div class="container">
-            <ul class="list">
-                <li class="item"><span>1</span></li>
-                <li class="item"><span>2</span></li>
-                <li class="item"><span>3</span></li>
-            </ul>
-            <ul class="list">
-                <li class="item"><span>4</span></li>
-                <li class="item"><span>5</span></li>
-                <li class="item"><span>6</span></li>
-            </ul>
-        </div>
+        <a class="btn" id="btn-1" href="index.html">Нажимай!!!</a>
+        <ul class="list">
+            <li class="item"><span>1</span></li>
+            <li class="item"><span>2</span></li>
+            <li class="item"><span>3</span></li>
+            <li class="item"><span>4</span></li>
+            <li class="item"><span>5</span></li>
+        </ul>
+
     </main>
     <footer class="basement">
         Это подвал!
     </footer>
     <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
-    <script>
-        const list = document.querySelectorAll('.list');
-        const block = document.querySelectorAll('.item');
-        list[1].appendChild(block[5].cloneNode(true));
-        
-    </script>
+    <script src="js/btn.js"></script>
+    
+     
 </body>
 
 </html>

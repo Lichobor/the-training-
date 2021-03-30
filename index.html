@@ -4,25 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/nouislider@14.6.3/distribute/nouislider.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
     <link rel="stylesheet" href="css/style.css">
+
     <title>Document</title>
 </head>
 
 <body class="page-body">
     <header>
-        Привет, Мир!!! Ку-ку!
+        <h1 class="main-heading">Привет, Мир!!!</h1>
     </header>
-    <main>
-        <div>
-            этот проект я сделал сам
+    <main class="page-main">
+        <div class="text">
+            Этот проект я сделал сам
         </div>
+        <a class="btn" id="btn-1" href="#">Жми!!!</a>
+        <form class="level-form">
+            <div class="level-form__slider" id="slider"></div>
+            <p class="level-form__field">
+                <label class="level-form__label">Цена</label>
+                <input class="level-form__value">
+            </p>
+        </form>
+        <div class="map" id="myMap"></div>
     </main>
-    <footer>
+    <footer class="basement">
         Этот подвал я сделал сам
     </footer>
-    <script>
-     
-    </script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <script src="https://unpkg.com/nouislider@14.6.3/distribute/nouislider.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/map.js"></script>
+
 </body>
 
 </html>

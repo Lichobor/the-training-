@@ -8,7 +8,7 @@
     margin-top: 10px;
 }
 
-.mainHeading {
+.main-heading {
     outline: 1px solid green;
     margin: 0;
     padding-top: 20px;
@@ -40,14 +40,18 @@
     width: 350px;
     height: 100px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 20px;
+    padding-top: 20px;
     background-color: rgb(35, 193, 233);
     color: rgb(239, 247, 130);
     font-size: 40pt;
+    text-align: center;    
     border: none;
     outline: none;
     cursor: pointer;
     border-radius: 10px;
+    box-sizing: border-box;
+    text-decoration: none;
 
 }
 
@@ -70,7 +74,7 @@ display: flex;
     list-style: none;
     margin: 0 auto;
     margin-top: 50px;
-    padding: 20px;
+    padding: 10px;
     outline: 1px solid pink;
     width: 250px;
 }
@@ -81,8 +85,12 @@ display: flex;
     margin-bottom: 10px;
     padding: 10px;
     text-align: center;
-    background-color: rgb(245, 221, 117);
-    color: rgb(48, 136, 219);
+    background-color: rgb(233, 217, 72);
+    color: rgb(36, 112, 17);
+}
+
+.item:last-child {
+    margin-bottom: 0;
 }
 
 .basement {
@@ -94,4 +102,28 @@ display: flex;
     font-size: 20pt;
     color: rgb(90, 100, 105);
     background-color: rgb(236, 236, 188);
+}
+
+.hidden {
+    display: none;
+}
+
+.pink {
+    background-color: rgb(248, 7, 127);
+    color: rgb(233, 245, 242);
+}
+
+.map {
+    width: 100%;
+    height: 200px;
+    outline: 1px solid green;
+    margin-top: 200px;   
+}
+
+.level-form {    
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+    
 }
