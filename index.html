@@ -21,13 +21,28 @@
         <div class="text">
             Этот проект я сделал сам
         </div>
-        <a class="btn" id="btn-1" href="#">Жми!!!</a>
+        <a class="btn" id="btn-1" href="page1.html">Жми!!!</a>
         <form class="level-form">
             <div class="level-form__slider" id="slider"></div>
             <p class="level-form__field">
                 <label class="level-form__label">Цена</label>
                 <input class="level-form__value">
             </p>
+            <p class="level-form__field">
+                <label>
+                    <input class="level-form__special" type="checkbox"> Я оптовик
+                </label>
+            </p>
+        </form>
+        <form class="form" method="post" enctype="multipart/form-data"
+            action="https://22.javascript.pages.academy/code-and-magick" autocomplete="off">
+            <div class="form__wrapper">
+                <p class="form__field">
+                    <label for="nikOne">Введите имя</label>
+                    <input class="form__input" type="text" name="nik" id="nikOne" value="Никита" minlength="3" maxlength="20" required>
+                    <button class="btn-2" type="submit">click!</button>
+                </p>
+            </div>
         </form>
         <div class="map" id="myMap"></div>
     </main>
@@ -38,8 +53,10 @@
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
     <script src="https://unpkg.com/nouislider@14.6.3/distribute/nouislider.min.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="js/slider.js"></script> 
+    <script src="js/form.js"></script>
     <script src="js/map.js"></script>
+   
 
 </body>
 

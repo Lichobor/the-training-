@@ -124,6 +124,9 @@ display: flex;
     display: block;
     width: 250px;
     margin: 0 auto;
-    margin-top: 20px;
-    
+    margin-top: 20px;    
+}
+
+.form__wrapper {   
+    text-align: center;
 }

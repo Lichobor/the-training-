@@ -1,6 +1,6 @@
 const button = document.querySelector('#btn-1');
-const list = document.querySelector('.list')
-const items = list.children
+const list = document.querySelector('.list');
+const items = list.children;
 
 button.addEventListener('click', function (evt) {
     evt.preventDefault();
@@ -11,5 +11,5 @@ button.addEventListener('click', function (evt) {
     }
 });
 
-console.log(button)
-export{button};
+const number = 25;
+// export {number};
