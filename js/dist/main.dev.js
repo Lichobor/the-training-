@@ -4,3 +4,4 @@ const twoItem = oneItem.nextElementSibling;
 const elem = twoItem.getBoundingClientRect();
 console.log(elem);
 console.log(elem.height) */
+"use strict";
