@@ -38,10 +38,10 @@
 .btn {
     display: block;
     width: 350px;
-    height: 100px;
+    height: 80px;
     margin: 0 auto;
     margin-top: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
     background-color: rgb(35, 193, 233);
     color: rgb(239, 247, 130);
     font-size: 40pt;
@@ -75,18 +75,20 @@ display: flex;
     margin: 0 auto;
     margin-top: 50px;
     padding: 10px;
-    outline: 1px solid pink;
+    
     width: 250px;
 }
 
 .item {
     display: block;
-    outline: 1px solid rgb(16, 231, 99);
+    border: 2px dashed rgb(203, 234, 248);
     margin-bottom: 10px;
     padding: 10px;
     text-align: center;
-    background-color: rgb(233, 217, 72);
+    background-color: rgb(238, 244, 245);
     color: rgb(36, 112, 17);
+    border-radius: 10px;
+    cursor: move;
 }
 
 .item:last-child {
@@ -129,4 +131,8 @@ display: flex;
 
 .form__wrapper {   
     text-align: center;
+}
+
+.selected {
+    opacity: 0.6;
 }
