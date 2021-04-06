@@ -8,7 +8,7 @@
     margin-top: 10px;
 }
 
-.mainHeading {
+.main-heading {
     outline: 1px solid green;
     margin: 0;
     padding-top: 20px;
@@ -57,7 +57,8 @@
     color: rgb(235, 248, 48);
 }
 
-.btn:active {
+.btn:active,
+.btn:focus {
     box-shadow: 1px 1px 2px rgb(48, 43, 43) inset, -1px -1px 2px rgb(48, 43, 43) inset;
     color: rgb(201, 202, 180);
 }

@@ -10,18 +10,73 @@
 
 <body class="page-body">
     <header>
-        Привет, Мир!!! Ку-ку!
+        <h1 class="main-heading">Привет, Мир!!!</h1>
     </header>
-    <main>
-        <div>
-            этот проект я сделал сам
+    <main class="page-main">
+        <div class="text">
+            Этот проект я сделал сам
         </div>
+        <button class="btn" id="btn-1">Жми!!!</button>
+        <ul class="list">
+            <li class="item item-1"><span>1</span></li>
+            <li class="item item-2"><span>2</span></li>
+            <li class="item item-3"><span>3</span></li>
+        </ul>
     </main>
-    <footer>
-        Этот подвал я сделал сам
+    <footer class="basement">
+        это подвал
     </footer>
     <script>
-     
+        /*  const text = document.querySelector('.text');
+         text.style.color = 'green';
+         text.style.backgroundColor = 'lightyellow';
+         const button = document.getElementById('btn-1')
+
+         function addstyle(node) {
+             node.addEventListener('click', (evt) => {
+                 evt.preventDefault;
+                 setTimeout(() => {
+                     node.style.color = 'red';
+                     node.style.backgroundColor = 'black';
+                 }, 1000);
+             });
+         };
+
+         fun
+
+         const list = document.querySelector('.list');
+         const items = list.children;
+         for (item of items) {
+             addstyle(item)
+         }
+        */
+        const itemOne = document.querySelector('.item-1');
+        const itemTwo = document.querySelector('.item-2');
+        const itemThree = document.querySelector('.item-3');
+        const button = document.querySelector('.btn')
+
+        function addAll(node, backgroundColor, color, text, fontSize) {
+            node.style.backgroundColor = backgroundColor;
+            node.style.color = color;
+            node.textContent = text;
+            if (fontSize) {
+                node.style.fontSize = fontSize;
+            };
+        };
+
+
+        button.addEventListener('click', (evt) => {
+            evt.preventDefault;
+        setTimeout(() => {
+            addAll(itemOne, '#005', 'yellow', 'Ты', '1rem');
+        }, 500);
+        setTimeout(() => {
+            addAll(itemTwo, '#010', 'white', 'убрался', '2rem');
+        }, 1500);
+        setTimeout(() => {
+            addAll(itemThree, '#000', 'red', 'на столе?', '3rem');
+        }, 2500);
+    });
     </script>
 </body>
 
