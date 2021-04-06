@@ -16,30 +16,25 @@
         <div class="text">
             Этот проект я сделал сам!
         </div>
-        <button class="btn" id="btn-1">Жми!!!</button>
-        <div class="container">
-            <ul class="list">
-                <li class="item"><span>1</span></li>
-                <li class="item"><span>2</span></li>
-                <li class="item"><span>3</span></li>
-            </ul>
-            <ul class="list">
-                <li class="item"><span>4</span></li>
-                <li class="item"><span>5</span></li>
-                <li class="item"><span>6</span></li>
-            </ul>
-        </div>
+        <a class="btn" id="btn-1" href="index.html">Нажимай!!!</a>
+        <ul class="list">
+            <li class="item item-1">learn HTML</li>
+            <li class="item item-2">learn CSS</li>
+            <li class="item item-3">learn Javascript</li>
+            <li class="item item-4">learn React</li>
+            <li class="item item-5">learn Node.js</li>
+        </ul>
+
     </main>
     <footer class="basement">
         Это подвал!
     </footer>
     <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
-    <script>
-        const list = document.querySelectorAll('.list');
-        const block = document.querySelectorAll('.item');
-        list[1].appendChild(block[5].cloneNode(true));
+    <script src="js/btn.js"></script>
+    <script src="js/drag.js"></script>
+    <script src="js/main.js"></script>
 
-    </script>
+
 </body>
 
 </html>

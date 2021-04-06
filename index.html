@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/nouislider@14.6.3/distribute/nouislider.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
     <link rel="stylesheet" href="css/style.css">
+
     <title>Document</title>
 </head>
 
@@ -16,68 +21,44 @@
         <div class="text">
             Этот проект я сделал сам
         </div>
-        <button class="btn" id="btn-1">Жми!!!</button>
-        <ul class="list">
-            <li class="item item-1"><span>1</span></li>
-            <li class="item item-2"><span>2</span></li>
-            <li class="item item-3"><span>3</span></li>
-        </ul>
+        <a class="btn" id="btn-1" href="page1.html">Жми!!!</a>
+        <form class="level-form">
+            <div class="level-form__slider" id="slider"></div>
+            <p class="level-form__field">
+                <label class="level-form__label">Цена</label>
+                <input class="level-form__value">
+            </p>
+            <p class="level-form__field">
+                <label>
+                    <input class="level-form__special" type="checkbox"> Я оптовик
+                </label>
+            </p>
+        </form>
+        <form class="form" method="post" enctype="multipart/form-data"
+            action="https://22.javascript.pages.academy/code-and-magick" autocomplete="off">
+            <div class="form__wrapper">
+                <p class="form__field">
+                    <label for="nikOne">Введите имя</label>
+                    <input class="form__input" type="text" name="nik" id="nikOne" value="Никита" minlength="3" maxlength="20" required>
+                    <button class="btn-2" type="submit">click!</button>
+                </p>
+            </div>
+        </form>
+        <div class="map" id="myMap"></div>
     </main>
     <footer class="basement">
-        это подвал
+        Этот подвал я сделал сам
     </footer>
-    <script>
-        /*  const text = document.querySelector('.text');
-         text.style.color = 'green';
-         text.style.backgroundColor = 'lightyellow';
-         const button = document.getElementById('btn-1')
-
-         function addstyle(node) {
-             node.addEventListener('click', (evt) => {
-                 evt.preventDefault;
-                 setTimeout(() => {
-                     node.style.color = 'red';
-                     node.style.backgroundColor = 'black';
-                 }, 1000);
-             });
-         };
-
-         fun
-
-         const list = document.querySelector('.list');
-         const items = list.children;
-         for (item of items) {
-             addstyle(item)
-         }
-        */
-        const itemOne = document.querySelector('.item-1');
-        const itemTwo = document.querySelector('.item-2');
-        const itemThree = document.querySelector('.item-3');
-        const button = document.querySelector('.btn')
-
-        function addAll(node, backgroundColor, color, text, fontSize) {
-            node.style.backgroundColor = backgroundColor;
-            node.style.color = color;
-            node.textContent = text;
-            if (fontSize) {
-                node.style.fontSize = fontSize;
-            };
-        };
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <script src="https://unpkg.com/nouislider@14.6.3/distribute/nouislider.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/map.js"></script>
 
 
-        button.addEventListener('click', (evt) => {
-            evt.preventDefault;
-        setTimeout(() => {
-            addAll(itemOne, '#005', 'yellow', 'Ты', '1rem');
-        }, 500);
-        setTimeout(() => {
-            addAll(itemTwo, '#010', 'white', 'убрался', '2rem');
-        }, 1500);
-        setTimeout(() => {
-            addAll(itemThree, '#000', 'red', 'на столе?', '3rem');
-        }, 2500);
-    });
-    </script>
+
 </body>
 
 </html>

@@ -38,16 +38,20 @@
 .btn {
     display: block;
     width: 350px;
-    height: 100px;
+    height: 80px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 20px;
+    padding-top: 10px;
     background-color: rgb(35, 193, 233);
     color: rgb(239, 247, 130);
     font-size: 40pt;
+    text-align: center;    
     border: none;
     outline: none;
     cursor: pointer;
     border-radius: 10px;
+    box-sizing: border-box;
+    text-decoration: none;
 
 }
 
@@ -71,19 +75,25 @@ display: flex;
     list-style: none;
     margin: 0 auto;
     margin-top: 50px;
-    padding: 20px;
-    outline: 1px solid pink;
+    padding: 10px;
+    
     width: 250px;
 }
 
 .item {
     display: block;
-    outline: 1px solid rgb(16, 231, 99);
+    border: 2px dashed rgb(203, 234, 248);
     margin-bottom: 10px;
     padding: 10px;
     text-align: center;
-    background-color: rgb(245, 221, 117);
-    color: rgb(48, 136, 219);
+    background-color: rgb(238, 244, 245);
+    color: rgb(36, 112, 17);
+    border-radius: 10px;
+    cursor: move;
+}
+
+.item:last-child {
+    margin-bottom: 0;
 }
 
 .basement {
@@ -95,4 +105,35 @@ display: flex;
     font-size: 20pt;
     color: rgb(90, 100, 105);
     background-color: rgb(236, 236, 188);
+}
+
+.hidden {
+    display: none;
+}
+
+.pink {
+    background-color: rgb(248, 7, 127);
+    color: rgb(233, 245, 242);
+}
+
+.map {
+    width: 100%;
+    height: 200px;
+    outline: 1px solid green;
+    margin-top: 200px;   
+}
+
+.level-form {    
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 20px;    
+}
+
+.form__wrapper {   
+    text-align: center;
+}
+
+.selected {
+    opacity: 0.6;
 }
