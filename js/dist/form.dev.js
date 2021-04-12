@@ -1,4 +1,6 @@
-const myInput = document.querySelector('.form__input');
+"use strict";
+
+var myInput = document.querySelector('.form__input');
 /* myInput.addEventListener('invalid', () => {
     if (myInput.validity.valueMissing) {
         myInput.setCustomValidity('Что, рука отсохла? Хоть три буквы напечатай!')        
@@ -11,24 +13,21 @@ const myInput = document.querySelector('.form__input');
     }
 }); */
 
-const minLength = 3;
-const maxLength = 15
+var minLength = 3;
+var maxLength = 15;
+myInput.addEventListener('input', function () {
+  var valueLength = myInput.value.length;
 
-myInput.addEventListener('input', () => {
-    const valueLength = myInput.value.length;
+  if (valueLength < minLength) {
+    myInput.setCustomValidity("\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0435\u0449\u0451 ".concat(minLength - valueLength, " \u0441\u0438\u043C\u0432."));
+  } else if (valueLength > maxLength) {
+    myInput.setCustomValidity("\u0423\u0434\u0430\u043B\u0438\u0442\u0435 \u043B\u0438\u0448\u043D\u0438\u0435 ".concat(maxLength - valueLength, " \u0441\u0438\u043C\u0432."));
+  } else {
+    myInput.setCustomValidity('');
+  }
 
-    if (valueLength < minLength) {
-        myInput.setCustomValidity(`Введите ещё ${minLength - valueLength} симв.`)
-    } else if (valueLength > maxLength) {
-        myInput.setCustomValidity(`Удалите лишние ${maxLength - valueLength} симв.`)
-    } else {
-        myInput.setCustomValidity('')
-    }
-
-    myInput.reportValidity();
-
+  myInput.reportValidity();
 });
-
 /* const MIN_NAME_LENGTH = 2;
 const MAX_NAME_LENGTH = 15;
 
@@ -54,8 +53,7 @@ userNameInput.addEventListener('input', () => {
     console.log(wizards);
   });
  */
-  const formData = new FormData
 
-  formData.append('name', 'Nikita');
-
-  console.log(formData)
+var formData = new FormData();
+formData.append('name', 'Nikita');
+console.log(formData);
