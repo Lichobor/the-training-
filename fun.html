@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <header>Привет, мир</header>
-    <main></main>
+    <header id="main-header"></header>
+    <main>
+        <input type="text" name="txt">
+        <button type="button">Push</button>
+    </main>
     <footer></footer>
     <script>
-        
-       const randomWord = function () {
-           const array = ['дуб', 'береза', 'тополь', 'липа'];
-           let word = array[Math.floor(Math.random() * array.length)];
-           return word;
-       }
 
-       alert(randomWord())
+        document.querySelector('button').onclick = myPush
+        function myPush() {
+            let name = document.querySelector('input').value
+            alert(`Привет, ${name}`)
+            
+        }
+        /* const answer = prompt('введите имя');
+        const head = document.getElementById('main-header');
+        head.insertAdjacentText("afterbegin", `Привет, ${answer}`) */
 
-    </script>    
+    </script>
 </body>
+
 </html>

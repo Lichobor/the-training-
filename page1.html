@@ -12,20 +12,24 @@
     <header>
         <h1 class="main-heading">Привет, Мир!!!</h1>
     </header>
+
     <main class="page-main">
         <div class="text">
             Этот проект я сделал сам!
         </div>
         <a class="btn" id="btn-1" href="index.html">Нажимай!!!</a>
-        <ul class="list">
-            <li class="item item-1">learn HTML</li>
-            <li class="item item-2">learn CSS</li>
-            <li class="item item-3">learn Javascript</li>
-            <li class="item item-4">learn React</li>
-            <li class="item item-5">learn Node.js</li>
-        </ul>
+        <div class="container">
+            <ul class="list list-1">
+                <li class="item item-1">learn HTML</li>
+                <li class="item item-2">learn CSS</li>
+                <li class="item item-3">learn Javascript</li>
+                <li class="item item-4">learn React</li>
+                <li class="item item-5">learn Node.js</li>
+            </ul>
+        </div>
 
     </main>
+
     <footer class="basement">
         Это подвал!
     </footer>
@@ -33,8 +37,16 @@
     <script src="js/btn.js"></script>
     <script src="js/drag.js"></script>
     <script src="js/main.js"></script>
-    
-     
+    <script>
+        $('.text').text('Этот проект мне подарили!')
+        $('.container').append('<ul class="list list-2"></ul>')
+        for(let i = 0; i < 5; i++) {
+            let question = prompt('Что вы любите больше всего')
+            $('.list-2').append('<li class="item">' + question + '</li>')
+        }
+    </script>
+
+
 </body>
 
 </html>
