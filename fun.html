@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="main-header"></header>
+    <main>
+        <input type="text" name="txt">
+        <button type="button">Push</button>
+    </main>
+    <footer></footer>
+    <script>
+
+        document.querySelector('button').onclick = myPush
+        function myPush() {
+            let name = document.querySelector('input').value
+            alert(`Привет, ${name}`)
+            
+        }
+        /* const answer = prompt('введите имя');
+        const head = document.getElementById('main-header');
+        head.insertAdjacentText("afterbegin", `Привет, ${answer}`) */
+
+    </script>
+</body>
+
+</html>
