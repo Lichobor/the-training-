@@ -6,27 +6,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header id="main-header"></header>
     <main>
-        <input type="text" name="txt">
+        <!-- <input type="text" name="txt">
         <button type="button">Push</button>
+        <p class="out"></p> -->
     </main>
     <footer></footer>
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
     <script>
+        /*  document.querySelector('button').addEventListener('click', myPush)
+         function myPush() {
+             let name = document.querySelector('input').value;
+             let out = document.querySelector('.out')
+             out.insertAdjacentText("afterbegin", `Привет, ${name}!`)
+         }; */
 
-        document.querySelector('button').onclick = myPush
-        function myPush() {
-            let name = document.querySelector('input').value
-            alert(`Привет, ${name}`)
-            
-        }
-        /* const answer = prompt('введите имя');
-        const head = document.getElementById('main-header');
-        head.insertAdjacentText("afterbegin", `Привет, ${answer}`) */
+        const Car = function (x, y) {
+            this.x = x;
+            this.y = y;
+            this.draw();            
+        };
 
+        /*  const dravCar = function (car) {
+             let carHtml = '<img src="img/avto-3.jpg">'
+             let carElement = $(carHtml)
+ 
+             carElement.css({
+                 position: 'absolute',
+                 left: car.x,
+                 top: car.y
+             });
+ 
+             $('body').append(carElement)
+         };
+ 
+         const tesla = new Car (10, 20);
+         const nissan = new Car (300, 60);
+ 
+         dravCar (tesla);
+         dravCar (nissan);
+ 
+         const carTwo = '<img src="img/avto-4.jpg">'
+         carTwoElement = $(carTwo)
+         carTwoElement.css ({
+             position: 'absolute',
+             left: '100px',
+             top: '200px',
+         })
+ 
+         $('body').append(carTwoElement) */
+
+        Car.prototype.draw = function () {
+            let carHtml = '<img src="img/avto-3.jpg">'
+            this.carElement = $(carHtml)
+            this.carElement.css({
+                position: 'absolute',
+                left: this.x,
+                top: this.y
+            })
+
+            $('body').append(this.carElement)
+        };
+
+        Car.prototype.moveRight = function (speed) {
+            this.x +=(Math.floor(Math.random() * speed));
+
+            this.carElement.css({
+                left: this.x,
+                top: this.y
+            })
+        };
+
+        const tesla = new Car(50, 10);
+        const nissan = new Car (50, 200);
+        
+
+        setIntervals(() => tesla.moveRight(5), 100);
+        setIntervals(() => nissan.moveRight(5), 100);
     </script>
 </body>
 
