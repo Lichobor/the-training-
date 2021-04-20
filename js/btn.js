@@ -11,5 +11,3 @@ button.addEventListener('click', function (evt) {
     }
 });
 
-const number = 25;
-// export {number};

@@ -15,4 +15,4 @@ console.log(elem.height) */
     }
 );
  */
-
+"use strict";
