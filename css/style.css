@@ -147,7 +147,7 @@ display: flex;
     outline: 1px solid green;
     background-color: honeydew;
     height: 20px;
-    width: 175px;    
+    width: 175px;
 }
 
 .ball {
@@ -167,7 +167,7 @@ display: flex;
     height: 400px;
     background-color: rgb(206, 238, 92);
     margin: 0 auto;
-    margin-top: 30px;   
+    margin-top: 30px;
 }
 
 .score-wrapper {
@@ -222,4 +222,8 @@ display: flex;
 
 .none {
     display: none;
+}
+
+.canvas {
+    background-color: rgb(236, 229, 218);
 }
