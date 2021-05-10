@@ -1,0 +1,23 @@
+{
+  "name": "the-training-",
+  "version": "1.0.0",
+  "description": "Study project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lichobor/the-training-.git"
+  },
+  "keywords": [
+    "training",
+    "project"
+  ],
+  "author": "Lichobor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lichobor/the-training-/issues"
+  },
+  "homepage": "https://github.com/Lichobor/the-training-#readme"
+}
